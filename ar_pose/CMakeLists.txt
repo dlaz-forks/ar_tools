@@ -52,3 +52,6 @@ add_dependencies(ar_multi
 	${PROJECT_NAME}_generate_messages_cpp
 	${artoolkit_EXPORTED_TARGETS}
 )
+
+install(TARGETS ar_single ar_multi DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+install(DIRECTORY launch/ DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch)
